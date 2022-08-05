@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Tasarım</title>
+    <style>
+      #sözleşme {
+        resize: none;
+        width: 350px;
+        height: 70px;
+      }
+      #border {
+        border: 1px solid black;
+        padding: 20px;
+      }
+      .kişiselbilgi label {
+        display: inline-block;
+        width: 200px;
+      }
+      .deneyim {
+        /* border: solid red; */
+        display: inline
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 193px
+        box-sizing: border-box;
+        margin-top: 30px;
+        
+        
+      }
+
+      .yeni {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        margin-left: 203px;
+        margin-top: -200px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="border">
+      <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+      <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <input type="checkbox" name="bilgi" id="bilgi" />
+        <label for="bilgi"
+          >Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini
+          onaylıyorum</label
+        >
+        <br />
+        <input type="submit" value="Formu Kaydet" />
+        <input type="reset" value="Formu Temizle" />
+      </fieldset>
+      <div class="kişiselbilgi">
+        <fieldset>
+          <legend>Kişisel Bilgiler</legend>
+          <label for="formgüvenlik">Form Güvenlik ID</label>
+          <input
+            type="text"
+            name="ID yi göster"
+            id="formgüvenlik"
+            placeholder="asdfgjh"
+          />
+          <br />
+          <label for="name">Ad</label>
+          <input type="text" name="girilen ad" id="name" />
+          <br />
+          <label for="soyad">Soyad</label>
+          <input type="text" name="girilen soyad" id="soyad" />
+          <br />
+          <label for="yaş">Yaş</label>
+          <input type="number" name="girilen yaş" id="yaş" />
+          <br />
+          <label for="mail">Mail Adresi</label>
+          <input type="email" name="girilen mail" id="mail" />
+          <br />
+          <label for="foto">Fotoğra Ekle</label>
+          <input type="file" name="eklene foto" id="foto" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Diğer Bilgiler</legend>
+          <p style="text-align: center">
+            <b>Buradaki Alanlar Alanlar Mesleki Deneyimi Kapsar</b>
+          </p>
+          <br />
+          <label for="giris">Sektöre Giriş Tarihi</label>
+          <input type="date" name="girilen tarih" id="giris" />
+          <br />
+
+          <div class="deneyim">
+            <p>sektör deneyimi</p>
+          </div>
+          <div class="yeni">
+            <input
+              type="radio"
+              name="deneyim süre"
+              id="deneyim"
+              value="1-5 yıl"
+            />
+            <label for="deneyim">1-5 yıl</label>
+            <br />
+            <input type="radio" name="deneyim süre" id="deneyim" />
+            <label for="deneyim">6-10 yıl</label>
+            <br />
+            <input type="radio" name="deneyim süre" id="deneyim" />
+            <label for="deneyim">11-15 yıl</label>
+            <br />
+            <input type="radio" name="deneyim süre" id="deneyim" />
+            <label for="deneyim">15-üzeri</label>
+          </div>
+
+          <br />
+          <label for="dil">Programlama Dilleri</label>
+          <select name="seçilen diller" id="dil" size="6" multiple>
+            <option value="c#">c#</option>
+            <option value="php">php</option>
+            <option value="hgh">hgh</option>
+            <option value="java">java</option>
+            <option value="html">html</option>
+            <option value="react">react</option>
+            <option value="javascript">javascript</option>
+            <option value="java">java</option>
+          </select>
+        </fieldset>
+      </div>
+
+      <fieldset>
+        <legend>Sözleşme Kopyası</legend>
+        <textarea name="sözleşme kopyası" id="sözleşme">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio voluptas, accusamus eum quas laboriosam eveniet nobis voluptatum? Reiciendis praesentium neque odio earum impedit eius a sapiente est natus corporis!</textarea
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Mail Listesi</legend>
+        <label for="istiyorum">Mail listesine katılmak <b>istiyorum</b></label>
+        <input type="radio" name="katılma durumu" id="istiyorum" />
+        <br />
+        <label for="istemiyorum"
+          >Mail listesine katılmak <b><u>istemiyorum</u></b>
+        </label>
+        <input type="radio" name="katılma durumu" id="istemiyorum" />
+      </fieldset>
+    </div>
+  </body>
+</html>
